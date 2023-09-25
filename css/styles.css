@@ -195,7 +195,7 @@ img {
   letter-spacing: 0.045em;
   text-transform: capitalize;
 }
-.mobile-nav-item:not(:last-child) {
+.mobile-nav-item {
   margin-bottom: 40px;
 }
 .mobile-item-link--active {
@@ -232,8 +232,11 @@ img {
   }
 }
 
+.header .logo {
+  margin-right: 120px;
+}
+
 .logo {
-  margin-right: 76px;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -260,6 +263,11 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .header .logo {
+    margin-right: 76px;
   }
 }
 .list-item-link {
@@ -437,17 +445,18 @@ img {
   letter-spacing: 0.045em;
   text-transform: capitalize;
 }
+@media screen and (max-width: 767px) {
+  .hero-title {
+    max-width: 232px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-title {
+    max-width: 550px;
     font-size: 56px;
     line-height: 1.07143; /* 107.143% */
     letter-spacing: 0.07em;
-    max-width: 496px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .hero-title {
-    max-width: 550px;
   }
 }
 
