@@ -616,9 +616,12 @@ img {
 .list-item-wrap {
   padding: 32px 0;
 }
+.mobile-menu .card-social {
+  justify-content: space-between;
+}
 .card-social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
 }
 .social-link {
